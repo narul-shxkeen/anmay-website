@@ -1,0 +1,22 @@
+@keyframes fallBack {
+   
+        0% { transform: rotateX(0); opacity: 1; transform-origin: bottom; }
+        30% { transform: rotateX(-45deg); opacity: 1; transform-origin: bottom; } /* Lean forward */
+        50% { transform: rotateX(-45deg); opacity: 1; transform-origin: bottom; } /* Pause */
+        100% { transform: rotateX(45deg); opacity: 0; transform-origin: bottom; } /* Rotate backwards */
+   
+  }
+  
+  @keyframes appear {
+    0% { transform: rotateX(120deg); opacity: 0; transform-origin: bottom; }
+    100% { transform: rotateX(0); opacity: 1; transform-origin: bottom; }
+  }
+  
+  .fall-back {
+    animation: fallBack 1s forwards; /* Adjust duration and steps */
+  }
+  
+  .appear {
+    animation: appear 1s forwards ease-out; /* Slower animation */
+  }
+
