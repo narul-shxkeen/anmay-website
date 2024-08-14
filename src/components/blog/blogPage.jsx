@@ -1,5 +1,5 @@
 import React from "react";
-import Entries from "./blog.jsx"
+// import Entries from "./blog.jsx"
 
 function Blog(){
 return <div className=" flex flex-col pt-28 gap-10">
@@ -9,7 +9,7 @@ return <div className=" flex flex-col pt-28 gap-10">
     </div>
     <hr className="border-dotted border-t-[10px] border-x-0 border-b-0 mx-[44vw] md:mx-[47.5vw] border-[#574B60]"/>
     <div>
-    <Entries />
+    {/* <Entries /> */}
     </div>
 </div>
 }
